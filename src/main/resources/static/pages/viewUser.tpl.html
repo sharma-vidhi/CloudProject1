@@ -1,0 +1,72 @@
+<div ng-controller="ViewUserCtrl as viewUser">
+	<div class="data-loading" ng-show="dataLoading">
+ 		<i class="fa fa-refresh fa-spin fa-5x "></i>	
+ 	</div>
+
+	<div class="panel panel-primary" ng-hide="dataLoading">
+	    <div class="panel-heading">
+	        <h3 class="panel-title">View User</h3>
+	    </div>
+	    <div class="panel-body">
+	        <form class="form-horizontal" role="form" name="personForm">
+	            
+	            <div class="row">					
+					  <div class="col-md-6">
+					
+						<div class="form-group">                
+			                <label for="firstName" class="col-sm-3 control-label">First name</label>		                
+			                <div class="col-sm-9" style="padding-top: 7px">
+			                	{{ user.firstName }}    
+			                </div>
+			            </div>	  
+					  	
+					  	<div class="form-group">
+			                <label for="lastName" class="col-sm-3 control-label">Last name</label>
+			                <div class="col-sm-9" style="padding-top: 7px">
+			                	{{ user.lastName }}    
+			                </div>
+			            </div>
+						
+						<div class="form-group">
+			                <label for="description" class="col-sm-3 control-label">Description</label>
+			                <div class="col-sm-9" style="padding-top: 7px">
+			                	{{ user.dateOfBirth | formatDate }}    
+			                </div>
+			            </div>	  
+						
+						<div class="form-group">
+			                <label for="image" class="col-sm-3 control-label">Photo</label>
+			                <div class="col-sm-9" style="padding-top: 7px">
+			                	<a href="{{ user.userImage.url }}" class="thumbnail">
+							      <img src="{{ user.userImage.url }}" alt="{{ user.firstName }}">
+							    </a>  
+			                </div>		                
+			            </div>	  
+					  
+					  </div>
+					  
+					  <div class="col-md-6">
+	
+						<div class="form-group">
+			                <label for="start" class="col-sm-3 control-label">Initial Time </label>		
+			                <div class="col-sm-9" style="padding-top: 7px">
+			                	{{ user.updation.start }}    
+			                </div>
+			            </div>
+			            
+			            <div class="form-group">
+			                <label for="tupdate" class="col-sm-3 control-label">Update Time</label>
+			                <div class="col-sm-9" style="padding-top: 7px">
+			                	{{ user.updation.tupdate }}    
+			                </div>
+			            </div>
+			            
+			           
+			            				  
+					  </div>
+					</div>      
+	        </form>
+	        
+	    </div>
+	</div>
+</div>
