@@ -26,7 +26,7 @@ public class FileArchiveService {
 	@Autowired
 	private AmazonS3Client s3Client;
 
-	private static final String S3_BUCKET_NAME = "aws-pro1";
+	private static final String S3_BUCKET_NAME = "$DATABASE_NAME";
 
 
 	public UserImage saveFileToS3(MultipartFile multipartFile) throws FileArchiveServiceException {
