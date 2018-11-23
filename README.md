@@ -11,10 +11,6 @@ Details:
 -   Course: [Cloud
     Technologies](http://info.sjsu.edu/web-dbgen/catalog/courses/CMPE281.html)
 
--   Professor [Sanjay Garje](https://www.linkedin.com/in/sanjaygarje/)
-
--   ISA: [Divyankitha Urs](https://www.linkedin.com/in/divyankithaur/)
-
 -   Student: [Vidhi Sharma](https://www.linkedin.com/in/vidhi-sharma-/)
 
 **Prerequisite: **
